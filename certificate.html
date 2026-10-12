@@ -32,41 +32,13 @@
       <div class="row"><span class="k">设备代码：</span><span class="v">42704205282026030001</span></div>
       <div class="row"><span class="k">产品编号：</span><span class="v">26032150</span></div>
       <div class="qrline">
-        <svg id="qr" width="86" height="86" viewBox="0 0 29 29" shape-rendering="crispEdges"></svg>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQIAAAECAQMAAAAvgUsTAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACS0lEQVRogd2Zy23EMAxEafjg45bgUlyaVNqWsiX4uIeFmZkh5SBBCogoYD+2ng+iKHJImxUaq3Oce1/cX2bbiVtvO/pni4mpCHxwf3f87L68H87JZ/tsMVGN2P3awh7ui59HpxUaJg//TEmYYaGvhsnDVy65OHEZCBqlw5O1rSWJ8OTusft0Ytz5w9cnIEYMkjvji+Hn/DNKFSByYNIeYY+MuL+TSBHijlIKu4+naXIlm/aYh7DmDDoL4+yVk64D2caSyxA4t20JT0b44QbLiRFxE6tF8IpObOkCZj50ULc0zyREeDKusDhkD05yoX31iEbliC6Mg/+gDNIot6/XIVblUAaoDXqdJ9glhpRf1pGBJiFS4BjDrmuNVDltLL4WEZMu8Qqfjr11HmMQn3JE5JdXGy6QcTak32REuG5kj1E1wpPx1LPJk2sR2FYWG1GApB5AcQnCZiMYT7lQHU3pHVkgVHo5gqKARrniC6cSDzxNWlaGKkb0e+NtaATYI8LuOROxsvcWG3yOvhQXqtVmjVyJUK3I8IO7qhrZ2OiUse5ekFDCXEZ3TvbgP1xyTESM8niRnHvHQ+qfRvexGIGqEcpAXttGdyOEna31iJ2erJTKKgQbn6J95Jd5iBwqHSN7hCiQPIhOaiEie44hY+27cyVhd9diZQjur94E6I1VpBazsEdGqXmI6Dky/Oyjf5qe3CMkVSTUbpQYUjMgM01R4n6zerhKyji8v9/g/XciPLlpM20sVFXjj7c8NYgRg64tc0nL2sOGMihEFBpfNsEoP35Ht0UAAAAASUVORK5CYII=" width="86" height="86" style="flex:none" alt="登记证二维码">
         <div class="qt">登记机关：长阳土家族自治县市场监督管理局<br>发证日期: 2026年04月28日</div>
       </div>
       <p class="note">依据安全技术规范的要求，应当在定期检验确定的有效期和技术参数范围内使用。</p>
     </div>
   </div>
 </div>
-
-<script>
-// 确定性伪随机生成装饰性二维码图案（非真实可扫码）
-(function(){
-  var n=29, svg=document.getElementById('qr');
-  function h(x,y){
-    var s=Math.sin((x+1)*127.1+(y+1)*311.7)*43758.5453;
-    return s-Math.floor(s);
-  }
-  function inEye(x,y){
-    return (x<7&&y<7)||(x>n-8&&y<7)||(x<7&&y>n-8);
-  }
-  var r='';
-  for(var y=0;y<n;y++){
-    for(var x=0;x<n;x++){
-      if(inEye(x,y)) continue;
-      if(h(x,y)>0.55) r+='<rect x="'+x+'" y="'+y+'" width="1" height="1" fill="#111"/>';
-    }
-  }
-  function eye(ox,oy){
-    var s='<rect x="'+ox+'" y="'+oy+'" width="7" height="7" fill="#111"/>';
-    s+='<rect x="'+(ox+1)+'" y="'+(oy+1)+'" width="5" height="5" fill="#fff"/>';
-    s+='<rect x="'+(ox+2)+'" y="'+(oy+2)+'" width="3" height="3" fill="#111"/>';
-    return s;
-  }
-  svg.innerHTML=r+eye(0,0)+eye(n-7,0)+eye(0,n-7);
-})();
-</script>
 
 </body>
 </html>
